@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
-    <title>Coupon - TNT Admin</title>
+    <title>Category  - TNT Admin</title>
 
     <meta name="description" content="Static &amp; Dynamic Tables"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
@@ -25,11 +25,7 @@
     <![endif]-->
     <link rel="stylesheet" href="assets/css/ace-skins.min.css"/>
     <link rel="stylesheet" href="assets/css/ace-rtl.min.css"/>
-    <!-- link voucher -->
     <link rel="stylesheet" href="assets/css/table-voucher.css">
-
-
-
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="assets/css/ace-ie.min.css"/>
     <![endif]-->
@@ -45,23 +41,6 @@
     <script src="assets/js/html5shiv.min.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-    <style>
-    
-                .main-table{
-                    background-color: #f2f2f2;
-                }
-                .table-2  {
-                border: 1px solid #f1f1f1;
-                border-collapse: collapse;
-                }
-                th, td {
-                padding: 5px;
-                text-align: left;
-                
-                }
-
-        </style>
-        
 </head>
 
 <body class="no-skin">
@@ -422,6 +401,7 @@
             </li>
         </ul><!-- /.nav-list -->
 
+
         <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
             <i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state"
                data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
@@ -440,7 +420,7 @@
                     <li>
                         <a href="#">Tables</a>
                     </li>
-                    <li class="active">Coupon Management</li>
+                    <li class="active">Category Management</li>
                 </ul><!-- /.breadcrumb -->
 
                 <div class="nav-search" id="nav-search">
@@ -535,51 +515,39 @@
                         Tables
                         <small>
                             <i class="ace-icon fa fa-angle-double-right"></i>
-                            Coupon
+                            Category
                         </small>
                     </h1>
                 </div><!-- /.page-header -->
+               
 
-                <!--  add voucher-->
-                <button aria-expanded="false"  class="btn btn-outline-danger" 
-                data-toggle="collapse" data-target="#boxnoidung">Add Coupon</button>
+                    <button aria-expanded="false"  class="btn btn-outline-danger" 
+                            data-toggle="collapse" data-target="#boxnoidung">Add Category</button>
 
-                <div class="collapse mt-4" id="boxnoidung" >
-                <div class="card card-body bg-warning" >
-                <div style="width: 100%; height: 100px; background-color: #438eb9;  ">
-                    <div  style="float: left; margin-top: 10px; margin-left: 20px;">
-                        <label for="">Issue Code</label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div style="float: left; margin-top: 10px; margin-left: 50px;">
-                        <label for="">Name</label>
-                        <input type="text">
-                    </div>
-                    <div  style="float: left; margin-top: 10px; margin-left: 20px;">
-                        <label for="">From</label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div  style="float: left; margin-top: 10px; margin-left: 20px;">
-                        <label for="">To</label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div  style="float: left; margin-top: 10px; margin-left: 35px;">
-                        <label for="">Quantity</label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div  style="float: left; margin-top: 10px; margin-left: 20px;">
-                        <label for="">Promotion</label>
-                        <input type="text" name="" id="">
-                    </div>
-                    <div style="float: left; margin-top: 10px; margin-left: 60px;">
-                        <button type="button" class="btn btn-default btn-sm">
-                            <span class="glyphicon glyphicon-ok"></span> Ok 
-                        </button>
-                    </div>
+                    <div class="collapse mt-4" id="boxnoidung" >
+                        <div class="card card-body bg-warning" >
+                            <div style="width: 100%; height: 50px; background-color: #438eb9;  ">
+                                <div  style="float: left; margin-top: 10px; margin-left: 20px;">
+                                    <label for="">ID</label>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div style="float: left; margin-top: 10px; margin-left: 20px;">
+                                    <label for="">Category</label>
+                                    <input type="text">
+                                </div>
+                                <div  style="float: left; margin-top: 10px; margin-left: 20px;">
+                                    <label for="">Sex</label>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div style="float: left; margin-top: 10px; margin-left: 20px;">
+                                    <button type="button" class="btn btn-default btn-sm">
+                                        <span class="glyphicon glyphicon-ok"></span> Ok 
+                                    </button>
+                                </div>
 
-                </div>
-                </div>
-                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 <div class="row">
                     <div class="col-xs-12">
@@ -595,344 +563,488 @@
                                                 <span class="lbl"></span>
                                             </label>
                                         </th>
-                                        <th >Issue Code</th>
-                                        <th>Name</th>
-                                        <th>From</th>
-                                        <th>To</th>
-                                        <th>
-                                            <!-- <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i> -->
-                                            Quantity
-                                        </th>
-                                        <th >Promotion</th>
-                                       
-                                     
-                                        <th>Status</th>
+                                        <th class="center"> ID</th>
+                                        <th class="center"> Category</th>
+                                        <th class="center">Sex</th>                                                                 
+                                        <th class="center" style="width:200px;">Edit</th>
                                     </tr>
                                     </thead>
 
                                     <tbody>
-                                        <!-- Bắt đầu 1 voucher -->
+                                        <!-- dữ liệu table 1 bắt đầu từ đây -->
                                     <tr>
-                                        <!-- K quan tâm -->
                                         <td class="center">
                                             <label class="pos-rel">
                                                 <input type="checkbox" class="ace"/>
                                                 <span class="lbl"></span>
                                             </label>
                                         </td>
-                                        <!--  -->
-                                        
+
                                         <td class="center">
-                                            <div class="action-buttons">
-                                                <a href="#" class="green bigger-140 show-details-btn"
-                                                   title="Show Details">
-                                                   DHCV1001
-                                                    <i class="ace-icon fa fa-angle-double-down"></i>
-                                                    <span class="sr-only">Details</span>
-                                                </a>
+                                            121
+                                        </td>
+
+                                        <td>
+                                            Short Skirt
+                                        </td>
+                                        <td>
+                                            Female
+                                        </td>
+                                                                           
+                                        <td>
+                                            <div class="hidden-sm hidden-xs btn-group">
+                                                
+
+                                                <button class="btn btn-xs btn-info">
+                                                    <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                                </button>
+
+                                                <button class="btn btn-xs btn-danger">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+                                              
+                                            </div>
+
+                                            <div class="hidden-md hidden-lg">
+                                                <div class="inline pos-rel">
+                                                    <button class="btn btn-minier btn-primary dropdown-toggle"
+                                                            data-toggle="dropdown" data-position="auto">
+                                                        <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+                                                    </button>
+
+                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                        <li>
+                                                            <a href="#" class="tooltip-info" data-rel="tooltip"
+                                                               title="View">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="tooltip-success" data-rel="tooltip"
+                                                               title="Edit">
+																			<span class="green">
+																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="tooltip-error" data-rel="tooltip"
+                                                               title="Delete">
+																			<span class="red">
+																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </td>
-
-                                        <td>
-                                            Mùa Hè Sôi Động
-                                        </td>
-                                        <td> 
-                                            20/07/2020
-                                        </td>
-                                        <td > 01/09/2020</td>
-                                        <td>10</td>
-
-                                        <td>
-                                            5% Off
-                                       </td>
-
-                                        
-                                        <td>Activated</td>
                                     </tr>
+
+                                  
+
+                                    <tr>
+                                        <td class="center">
+                                            <label class="pos-rel">
+                                                <input type="checkbox" class="ace"/>
+                                                <span class="lbl"></span>
+                                            </label>
+                                        </td>
+
+                                        <td class="center">
+                                            122
+                                        </td>
+
+                                        <td>
+                                            
+                                            Trousers
+                                        </td>
+                                        <td>
+                                            Male
+                                        </td>
+                                                                           
+                                        <td>
+                                            <div class="hidden-sm hidden-xs btn-group">
+                                                
+
+                                                <button class="btn btn-xs btn-info">
+                                                    <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                                </button>
+
+                                                <button class="btn btn-xs btn-danger">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+                                              
+                                            </div>
+
+                                            <div class="hidden-md hidden-lg">
+                                                <div class="inline pos-rel">
+                                                    <button class="btn btn-minier btn-primary dropdown-toggle"
+                                                            data-toggle="dropdown" data-position="auto">
+                                                        <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+                                                    </button>
+
+                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                        <li>
+                                                            <a href="#" class="tooltip-info" data-rel="tooltip"
+                                                               title="View">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="tooltip-success" data-rel="tooltip"
+                                                               title="Edit">
+																			<span class="green">
+																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="tooltip-error" data-rel="tooltip"
+                                                               title="Delete">
+																			<span class="red">
+																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+
+                                
+                                    <tr>
+                                        <td class="center">
+                                            <label class="pos-rel">
+                                                <input type="checkbox" class="ace"/>
+                                                <span class="lbl"></span>
+                                            </label>
+                                        </td>
+
+                                        <td class="center">
+                                            123
+                                        </td>
+
+                                        <td>
+                                            Women Jocket 
+                                        </td>
+                                        <td>
+                                            Female
+                                        </td>
+                                                                           
+                                        <td>
+                                            <div class="hidden-sm hidden-xs btn-group">
+                                                
+
+                                                <button class="btn btn-xs btn-info">
+                                                    <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                                </button>
+
+                                                <button class="btn btn-xs btn-danger">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+                                              
+                                            </div>
+
+                                            <div class="hidden-md hidden-lg">
+                                                <div class="inline pos-rel">
+                                                    <button class="btn btn-minier btn-primary dropdown-toggle"
+                                                            data-toggle="dropdown" data-position="auto">
+                                                        <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+                                                    </button>
+
+                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                        <li>
+                                                            <a href="#" class="tooltip-info" data-rel="tooltip"
+                                                               title="View">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="tooltip-success" data-rel="tooltip"
+                                                               title="Edit">
+																			<span class="green">
+																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="tooltip-error" data-rel="tooltip"
+                                                               title="Delete">
+																			<span class="red">
+																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
 
                                  
+                                    <tr>
+                                        <td class="center">
+                                            <label class="pos-rel">
+                                                <input type="checkbox" class="ace"/>
+                                                <span class="lbl"></span>
+                                            </label>
+                                        </td>
 
-                                   
-                                    
+                                        <td class="center">
+                                            124
+                                        </td>
 
-                                     <!-- thông tin chi tiết vocher -->
-                                     <tr class="detail-row">
-                                        <td colspan="10">
-                                            <div class="table-detail">                                             
-                                                <!-- Code voucher trong này  -->
-                                                <div class="container"></div>
-                                                    <div class="row">
-                                                        <div class="col-md-10">
-                                             <!-- Nav tabs --><div class="card" >
-                                                                    <ul class="nav nav-tabs" role="tablist">
-                                                                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Information</a></li>
-                                                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Coupon List</a></li>
-                                                                        <!-- <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Lịch sử sử dụng</a></li>
-                                                                        -->
-                                                                    </ul>
+                                        <td>
+                                           
+                                            Shoes
+                                        </td>
+                                        <td>
+                                            Female
+                                        </td>
+                                                                           
+                                        <td>
+                                            <div class="hidden-sm hidden-xs btn-group">
                                                 
-                                                                     <!-- Tab panes -->
-                                                                <div class="tab-content">
-                                                                    <div role="tabpanel" class="tab-pane active" id="home">
-                                                                        <div F>
-                                                                            <table style="width:100%">
-                                                                                <tr>
-                                                                                  <th>Issue Code:</th>
-                                                                                  <td>DHCV1001</td>
-                                                                                  <th>Name:</th>   
-                                                                                  <td>Hè sôi động</td>                                                                             </tr>
-                                                                                <tr>
-                                                                                  <th>Time:</th>
-                                                                                  <td>20/11/2020 - 30/11/2020</td>
-                                                                                  <th>Promotin</th>
-                                                                                    <td>5% Off</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <th>Brand Name:</th>
-                                                                                    <td>All</td>
-                                                                                  
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <th>Status:</th>
-                                                                                    <td>Activated</td>
-                                                                                </tr>
-                                                                                  
-    
-                                                                              </table>
-                                                                        </div>
-                                                                        
-                                                                    </div>
-                                                                    <div role="tabpanel" class="tab-pane" id="profile" >
-                                                                        <table style="width:100%" class="table-2">
-                                                                            <tr class="table-2  main-table">
-                                                                              <th>Coupon</th>
-                                                                              <th>Promotion</th>
-                                                                              <th>Release Date</th>
-                                                                              <th>Expiration Date</th>
-                                                                              <th>Status</th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>BHGJ20134</td>
-                                                                              <td>Discount 5% product value</td>
-                                                                              <td>14/11/2020</td>
-                                                                              <td>25/11/2020</td>
-                                                                              <td>7</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>BHGJ20134</td>
-                                                                                <td></td>
-                                                                                <td>25/11/2020</td>
-                                                                                <td>03/12/2020</td>
-                                                                                <td>5</td>
-                                                                            </tr>
-                                                                          </table>
-                                                                    </div>
-                                                                    <!-- <div role="tabpanel" class="tab-pane" id="messages">
-                                                                        <table style="width:100%" class="table-2">
-                                                                            <tr class="table-2  main-table">
-                                                                              <th>Mã Voucher</th>
-                                                                              <th>Khách hàng</th>
-                                                                              <th>Tên sản phẩm</th>
-                                                                              <th>Giá gốc</th>
-                                                                              <th>Giá thanh toán</th>
-                                                                              <th>Ngày sử dụng</th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                              <td>BHGJ20134</td>
-                                                                              <td>Ông Thọ</td>
-                                                                              <td>Váy trẻ em Tmart</td>
-                                                                              <td>120.000đ</td>
-                                                                              <td>108.000đ</td>
-                                                                              <td>15/09/2020</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>BHGJ20134</td>
-                                                                                <td>Ông Thọ</td>
-                                                                                <td>Váy trẻ em Tmart</td>
-                                                                                <td>120.000đ</td>
-                                                                                <td>108.000đ</td>
-                                                                                <td>15/09/2020</td>
-                                                                            </tr>
-                                                                          </table>
-                                                                    </div> -->
-                                                                </div>
-                                                            </div>
-                                                         </div>
-                                                    </div>
+
+                                                <button class="btn btn-xs btn-info">
+                                                    <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                                </button>
+
+                                                <button class="btn btn-xs btn-danger">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+                                              
+                                            </div>
+
+                                            <div class="hidden-md hidden-lg">
+                                                <div class="inline pos-rel">
+                                                    <button class="btn btn-minier btn-primary dropdown-toggle"
+                                                            data-toggle="dropdown" data-position="auto">
+                                                        <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+                                                    </button>
+
+                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                        <li>
+                                                            <a href="#" class="tooltip-info" data-rel="tooltip"
+                                                               title="View">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="tooltip-success" data-rel="tooltip"
+                                                               title="Edit">
+																			<span class="green">
+																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="tooltip-error" data-rel="tooltip"
+                                                               title="Delete">
+																			<span class="red">
+																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
-                                                <!-- Hết voucher -->
                                             </div>
                                         </td>
                                     </tr>
-                                    <!--  Kết thúc-->
-                                    
+
+
+
                                   
                                     <tr>
-                                        <!-- K quan tâm -->
                                         <td class="center">
                                             <label class="pos-rel">
                                                 <input type="checkbox" class="ace"/>
                                                 <span class="lbl"></span>
                                             </label>
                                         </td>
-                                        <!--  -->
-                                        
+
                                         <td class="center">
-                                            <div class="action-buttons">
-                                                <a href="#" class="green bigger-140 show-details-btn"
-                                                   title="Show Details">
-                                                   DHCV5468
-                                                    <i class="ace-icon fa fa-angle-double-down"></i>
-                                                    <span class="sr-only">Details</span>
-                                                </a>
+                                            125
+                                        </td>
+
+                                        <td>
+                                            Sleepwear
+                                        </td>
+                                        <td>
+                                            Female
+                                        </td>
+                                                                           
+                                        <td>
+                                            <div class="hidden-sm hidden-xs btn-group">
+                                                
+
+                                                <button class="btn btn-xs btn-info">
+                                                    <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                                </button>
+
+                                                <button class="btn btn-xs btn-danger">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+                                              
                                             </div>
-                                        </td>
 
-                                        <td>
-                                            Mùa Đông Không Lạnh
-                                        </td>
-                                        <td> 
-                                            20/11/2020
-                                        </td>
-                                        <td > 01/12/2020</td>
-                                        <td>20</td>
+                                            <div class="hidden-md hidden-lg">
+                                                <div class="inline pos-rel">
+                                                    <button class="btn btn-minier btn-primary dropdown-toggle"
+                                                            data-toggle="dropdown" data-position="auto">
+                                                        <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+                                                    </button>
 
-                                        <td>
-                                            10% Off
-                                       </td>
+                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                        <li>
+                                                            <a href="#" class="tooltip-info" data-rel="tooltip"
+                                                               title="View">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
 
-                                        
-                                        <td>Activated</td>
-                                    </tr>
+                                                        <li>
+                                                            <a href="#" class="tooltip-success" data-rel="tooltip"
+                                                               title="Edit">
+																			<span class="green">
+																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
 
-                                 
-
-                                   
-                                    
-
-                                   
-                               
-                                   <!-- thông tin chi tiết vocher -->
-                                   <tr class="detail-row">
-                                    <td colspan="10">
-                                        <div class="table-detail">                                             
-                                            <!-- Code voucher trong này  -->
-                                            <div class="container"></div>
-                                                <div class="row">
-                                                    <div class="col-md-10">
-                                         <!-- Nav tabs --><div class="card" >
-                                                                <ul class="nav nav-tabs" role="tablist">
-                                                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Information</a></li>
-                                                                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Coupon List</a></li>
-                                                                    <!-- <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Lịch sử sử dụng</a></li>
-                                                                    -->
-                                                                </ul>
-                                            
-                                                                 <!-- Tab panes -->
-                                                            <div class="tab-content">
-                                                                <div role="tabpanel" class="tab-pane active" id="home">
-                                                                    <div F>
-                                                                        <table style="width:100%">
-                                                                            <tr>
-                                                                              <th>Issue Code:</th>
-                                                                              <td>DHCV1001</td>
-                                                                              <th>Name:</th>   
-                                                                              <td>Hè sôi động</td>                                                                             </tr>
-                                                                            <tr>
-                                                                              <th>Time:</th>
-                                                                              <td>20/11/2020 - 30/11/2020</td>
-                                                                              <th>Promotin</th>
-                                                                                <td>5% Off</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Brand Name:</th>
-                                                                                <td>All</td>
-                                                                              
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Status:</th>
-                                                                                <td>Activated</td>
-                                                                            </tr>
-                                                                              
-
-                                                                          </table>
-                                                                    </div>
-                                                                    
-                                                                </div>
-                                                                <div role="tabpanel" class="tab-pane" id="profile" >
-                                                                    <table style="width:100%" class="table-2">
-                                                                        <tr class="table-2  main-table">
-                                                                          <th>Coupon</th>
-                                                                          <th>Promotion</th>
-                                                                          <th>Release Date</th>
-                                                                          <th>Expiration Date</th>
-                                                                          <th>Status</th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                          <td>BHGJ20134</td>
-                                                                          <td>Discount 5% product value</td>
-                                                                          <td>14/11/2020</td>
-                                                                          <td>25/11/2020</td>
-                                                                          <td>3</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>BHGJ20134</td>
-                                                                            <td></td>
-                                                                            <td>25/11/2020</td>
-                                                                            <td>03/12/2020</td>
-                                                                            <td>5</td>
-                                                                        </tr>
-                                                                      </table>
-                                                                </div>
-                                                                <!-- <div role="tabpanel" class="tab-pane" id="messages">
-                                                                    <table style="width:100%" class="table-2">
-                                                                        <tr class="table-2  main-table">
-                                                                          <th>Mã Voucher</th>
-                                                                          <th>Khách hàng</th>
-                                                                          <th>Tên sản phẩm</th>
-                                                                          <th>Giá gốc</th>
-                                                                          <th>Giá thanh toán</th>
-                                                                          <th>Ngày sử dụng</th>
-                                                                        </tr>
-                                                                        <tr>
-                                                                          <td>BHGJ20134</td>
-                                                                          <td>Ông Thọ</td>
-                                                                          <td>Váy trẻ em Tmart</td>
-                                                                          <td>120.000đ</td>
-                                                                          <td>108.000đ</td>
-                                                                          <td>15/09/2020</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>BHGJ20134</td>
-                                                                            <td>Ông Thọ</td>
-                                                                            <td>Váy trẻ em Tmart</td>
-                                                                            <td>120.000đ</td>
-                                                                            <td>108.000đ</td>
-                                                                            <td>15/09/2020</td>
-                                                                        </tr>
-                                                                      </table>
-                                                                </div> -->
-                                                            </div>
-                                                        </div>
-                                                     </div>
+                                                        <li>
+                                                            <a href="#" class="tooltip-error" data-rel="tooltip"
+                                                               title="Delete">
+																			<span class="red">
+																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                            <!-- Hết voucher -->
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!--  Kết thúc-->
-                               
+                                        </td>
+                                    </tr>
+
+
+
+                                   
+                                    <tr>
+                                        <td class="center">
+                                            <label class="pos-rel">
+                                                <input type="checkbox" class="ace"/>
+                                                <span class="lbl"></span>
+                                            </label>
+                                        </td>
+
+                                        <td class="center">
+                                            126
+                                        </td>
+
+                                        <td>
+                                            T-Shirt
+                                        </td>
+                                        <td>
+                                            Male
+                                        </td>
+                                                                           
+                                        <td>
+                                            <div class="hidden-sm hidden-xs btn-group">
+                                                
+
+                                                <button class="btn btn-xs btn-info">
+                                                    <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                                </button>
+
+                                                <button class="btn btn-xs btn-danger">
+                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                </button>
+
+                                              
+                                            </div>
+
+                                            <div class="hidden-md hidden-lg">
+                                                <div class="inline pos-rel">
+                                                    <button class="btn btn-minier btn-primary dropdown-toggle"
+                                                            data-toggle="dropdown" data-position="auto">
+                                                        <i class="ace-icon fa fa-cog icon-only bigger-110"></i>
+                                                    </button>
+
+                                                    <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                                        <li>
+                                                            <a href="#" class="tooltip-info" data-rel="tooltip"
+                                                               title="View">
+																			<span class="blue">
+																				<i class="ace-icon fa fa-search-plus bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="tooltip-success" data-rel="tooltip"
+                                                               title="Edit">
+																			<span class="green">
+																				<i class="ace-icon fa fa-pencil-square-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="tooltip-error" data-rel="tooltip"
+                                                               title="Delete">
+																			<span class="red">
+																				<i class="ace-icon fa fa-trash-o bigger-120"></i>
+																			</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+
+                                
 
 
                                     </tbody>
+                                
                                 </table>
-                            </div><!-- /.span -->
+                            </div><!-- /.span -->   
                         </div><!-- /.row -->
 
                         <div class="hr hr-18 dotted hr-double"></div>
-
-
+                        
                         <div class="hr hr-18 dotted hr-double"></div>
 
                         <div class="row" style="display: none;">
