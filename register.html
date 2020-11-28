@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="css/raleway-font.css">
     <link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
     <!-- Jquery -->
-    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+    <link rel="stylesheet" href="assets/css/register.css">
     <!-- Main Style Css -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -48,31 +48,14 @@
                         </div>
                         <div class="col mt-10 mb-10">
                             <!-- Header Language Currency Start -->
-                            <ul class="header-lan-curr">
-                                <li><a href="#">eng</a>
-                                    <ul>
-                                        <li><a href="#">english</a></li>
-                                        <li><a href="#">spanish</a></li>
-                                        <li><a href="#">france</a></li>
-                                        <li><a href="#">russian</a></li>
-                                        <li><a href="#">chinese</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">$usd</a>
-                                    <ul>
-                                        <li><a href="#">pound</a></li>
-                                        <li><a href="#">dollar</a></li>
-                                        <li><a href="#">euro</a></li>
-                                        <li><a href="#">yen</a></li>
-                                    </ul>
-                                </li>
-                            </ul><!-- Header Language Currency End -->
+
                         </div>
                         <div class="col mt-10 mb-10">
                             <!-- Header Shop Links Start -->
                             <div class="header-top-right">
-                                <p><a href="#">My Account</a></p>
-                                <p><a href="login-register.html">Register</a><a href="login-register.html">Login</a></p>
+                                <p><a href="myaccount.html">Tài khoản của tôi</a></p>
+
+                                <p><a href="notification.html"><i class="fa fa-bell-o" aria-hidden="true"></i> </a><a href="register.html">Đăng ký</a><a href="login-register.html">Đăng nhập</a></p>
                             </div><!-- Header Shop Links End -->
                         </div>
                     </div>
@@ -97,7 +80,7 @@
                                     <button class="search-toggle"><img src="assets/images/icons/search.png" alt="Search Toggle"><img class="toggle-close" src="assets/images/icons/close.png" alt="Search Toggle"></button>
                                     <div class="header-search-wrap">
                                         <form action="#">
-                                            <input type="text" placeholder="Type and hit enter">
+                                            <input type="text" placeholder="Nhập thông tin tìm kiếm">
                                             <button><img src="assets/images/icons/search.png" alt="Search"></button>
                                         </form>
                                     </div>
@@ -106,7 +89,7 @@
                                     <a href="wishlist.html"><img src="assets/images/icons/wishlist.png" alt="Wishlist"> <span>02</span></a>
                                 </div>
                                 <div class="header-mini-cart">
-                                    <a href="cart.html"><img src="assets/images/icons/cart.png" alt="Cart"> <span>02($250)</span></a>
+                                    <a href="cart.html"><img src="assets/images/icons/cart.png" alt="Cart"> <span>02(250.000 Đ)</span></a>
                                 </div>
                             </div><!-- Header Advance Search End -->
                         </div>
@@ -114,38 +97,36 @@
                             <div class="main-menu">
                                 <nav>
                                     <ul>
-                                        <li><a href="index.html">HOME</a>
+                                        <li class="active"><a href="index.html">TRANG CHỦ</a>
+                                        </li>
+                                        <li><a href="shop.html">cỬA HÀNG</a>
                                             <ul class="sub-menu">
-                                                <li><a href="index.html">Home One</a></li>
-                                                <li><a href="index-2.html">Home Two</a></li>
-                                                <li><a href="index-box.html">Home Box</a></li>
+                                                <li><a href="shop.html">Tất cả sản phẩm</a></li>
+                                                <li><a href="shop-left-sidebar.html" class="fa fa-chevron-right"> Danh mục</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="" class="fa fa-bars"> Bé trai</a>
+                                                            <ul>
+                                                                <li style="margin-left: 20px"><a href="" class="fa fa-plus"> Áo thun</a></li>
+                                                                <li style="margin-left: 20px"><a href="" class="fa fa-plus">Đồng hồ</a></li>
+                                                                <li style="margin-left: 20px"><a href="" class="fa fa-plus">Quần dài</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="" class="fa fa-bars"> Bé gái</a>
+                                                            <ul>
+                                                                <li style="margin-left: 20px"><a href="" class="fa fa-plus"> Áo thun</a></li>
+                                                                <li style="margin-left: 20px"><a href="" class="fa fa-plus">Đồng hồ</a></li>
+                                                                <li style="margin-left: 20px"><a href="" class="fa fa-plus">Quần dài</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li><a href="shop.html">SHOP</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                                <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                <li><a href="single-product.html">Single Product</a></li>
-                                                <li><a href="single-product-left-sidebar.html">Single Product Left Sidebar</a></li>
-                                                <li><a href="single-product-right-sidebar.html">Single Product Right Sidebar</a></li>
-                                            </ul>
+
+
+                                        <li><a href="contact.html">Liên hệ</a></li>
+                                        <li><a href="about.html">Thông tin cửa hàng</a>
                                         </li>
-                                        <li class="active"><a href="#">PAGES</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="login-register.html">Login & Register</a></li>
-                                                <li class="active"><a href="wishlist.html">Wishlist</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="blog.html">BLOG</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Single Blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">CONTACT</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -155,16 +136,17 @@
                     </div>
                 </div>
             </div><!-- Header BOttom End -->
-        </div><!-- Header Section End -->
+        </div>
+        <!-- Header Section End -->
         <!-- Page Banner Section Start -->
         <div class="page-banner-section section" style="background-image: url(assets/images/hero/hero-1.jpg)">
             <div class="container">
                 <div class="row">
                     <div class="page-banner-content col">
-                        <h1>Regiter</h1>
+                        <h1>Đăng ký</h1>
                         <ul class="page-breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="wishlist.html">Register</a></li>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="wishlist.html">Đăng ký</a></li>
                         </ul>
                     </div>
                 </div>
@@ -180,31 +162,31 @@
                             <!-- SECTION 1 -->
                             <h2>
                                 <span class="step-icon"><i class="zmdi zmdi-account"></i></span>
-                                <span class="step-number">Step 1</span>
-                                <span class="step-text">Account Infomation</span>
+                                <span class="step-number">Bước 1</span>
+                                <span class="step-text">Thông tin tài khoản</span>
                             </h2>
                             <section>
                                 <div class="inner">
                                     <div class="form-row">
                                         <div class="form-holder form-holder-2">
-                                            <label for="username">Username*</label>
-                                            <input type="text" placeholder="Username" class="form-control" id="username" name="username" required>
+                                            <label for="username">Tên tài khoản*</label>
+                                            <input type="text" placeholder=" Tên tài khoản" class="form-control" id="username" name="username" required>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-holder form-holder-2">
-                                            <label for="email">Email Address*</label>
-                                            <input type="email" placeholder="Your Email" class="form-control" id="email" name="email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                                            <label for="email">Địa chỉ Email*</label>
+                                            <input type="email" placeholder="Địa chỉ Email" class="form-control" id="email" name="email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-holder">
-                                            <label for="password">Password*</label>
-                                            <input type="password" placeholder="Password" class="form-control" id="password" name="password" required>
+                                            <label for="password">Mật khẩu*</label>
+                                            <input type="password" placeholder="Mật khẩu" class="form-control" id="password" name="password" required>
                                         </div>
                                         <div class="form-holder">
-                                            <label for="confirm_password">Confirm Password*</label>
-                                            <input type="password" placeholder="Confirm Password" class="form-control" id="confirm_password" name="confirm_password" required>
+                                            <label for="confirm_password">Xác nhận mật khẩu*</label>
+                                            <input type="password" placeholder="Xác nhận mật khẩu" class="form-control" id="confirm_password" name="confirm_password" required>
                                         </div>
                                     </div>
                                 </div>
@@ -212,27 +194,27 @@
                             <!-- SECTION 2 -->
                             <h2>
                                 <span class="step-icon"><i class="zmdi zmdi-card"></i></span>
-                                <span class="step-number">Step 2</span>
-                                <span class="step-text">Payment Infomation</span>
+                                <span class="step-number">Bước 2</span>
+                                <span class="step-text">Thông tin thanh toán</span>
                             </h2>
                             <section>
                                 <div class="inner">
                                     <div class="form-row">
                                         <div class="form-holder form-holder-2">
-                                            <label for="card-type">Card Type</label>
+                                            <label for="card-type">Loại thẻ</label>
                                             <select name="card-type" id="card-type" class="form-control">
-                                                <option value="" disabled selected>Select Credit Card Type</option>
-                                                <option value="Business Credit Cards">Business Credit Cards</option>
+                                                <option value="" disabled selected>Chọn loại thẻ tín dụng</option>
+                                                <option value="Business Credit Cards">Thẻ tín dụng doanh nghiệp</option>
                                                 <option value="Limited Purpose Cards">Limited Purpose Cards</option>
-                                                <option value="Prepaid Cards">Prepaid Cards</option>
-                                                <option value="Charge Cards">Charge Cards</option>
-                                                <option value="Student Credit Cards">Student Credit Cards</option>
+                                                <option value="Prepaid Cards">Thẻ trả trước</option>
+                                                <option value="Charge Cards">Thẻ tính phí</option>
+                                                <option value="Student Credit Cards">Thẻ tín dụng sinh viên</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-holder form-holder-3">
-                                            <label for="card-number">Card Number</label>
+                                            <label for="card-number">Số thẻ</label>
                                             <input type="text" name="card-number" class="card-number" id="card-number" placeholder="ex: 489050625008xxxx">
                                         </div>
                                         <div class="form-holder">
@@ -242,21 +224,21 @@
                                     </div>
                                     <div class="form-row form-row-2">
                                         <div class="form-holder">
-                                            <label for="month">Expiry Month</label>
+                                            <label for="month">Tháng hết hạn</label>
                                             <select name="month" id="month" class="form-control">
-                                                <option value="" disabled selected>Expiry Month</option>
-                                                <option value="January">January</option>
-                                                <option value="February">February</option>
-                                                <option value="March">March</option>
-                                                <option value="February">February</option>
-                                                <option value="April">April</option>
-                                                <option value="May">May</option>
+                                                <option value="" disabled selected>Tháng hết hạn</option>
+                                                <option value="January">Tháng 1</option>
+                                                <option value="February">Tháng 2</option>
+                                                <option value="March">Tháng 3</option>
+                                                <option value="February">Tháng 2</option>
+                                                <option value="April">Tháng 4</option>
+                                                <option value="May">Tháng 5</option>
                                             </select>
                                         </div>
                                         <div class="form-holder">
-                                            <label for="year">Expiry Year</label>
+                                            <label for="year">Năm hết hạn</label>
                                             <select name="year" id="year" class="form-control">
-                                                <option value="" disabled selected>Expiry Year</option>
+                                                <option value="" disabled selected>Năm hết hạn</option>
                                                 <option value="2018">2018</option>
                                                 <option value="2017">2017</option>
                                                 <option value="2016">2016</option>
@@ -271,29 +253,29 @@
                             <!-- SECTION 3 -->
                             <h2>
                                 <span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
-                                <span class="step-number">Step 3</span>
-                                <span class="step-text">Confirm Your Details</span>
+                                <span class="step-number">Bước 3</span>
+                                <span class="step-text">Xác nhận thông tin của bạn</span>
                             </h2>
                             <section>
                                 <div class="inner">
-                                    <h3>Comfirm Details</h3>
+                                    <h3>Xác nhận thông tin</h3>
                                     <div class="form-row table-responsive">
                                         <table class="table">
                                             <tbody>
                                                 <tr class="space-row">
-                                                    <th>Username:</th>
+                                                    <th>Tên tài khoản:</th>
                                                     <td id="username-val"></td>
                                                 </tr>
                                                 <tr class="space-row">
-                                                    <th>Email Address:</th>
+                                                    <th>Địa chỉ Email:</th>
                                                     <td id="email-val"></td>
                                                 </tr>
                                                 <tr class="space-row">
-                                                    <th>Card Type:</th>
+                                                    <th>Loại thẻ:</th>
                                                     <td id="card-type-val"></td>
                                                 </tr>
                                                 <tr class="space-row">
-                                                    <th>Card Number:</th>
+                                                    <th>Số thẻ:</th>
                                                     <td id="card-number-val"></td>
                                                 </tr>
                                                 <tr class="space-row">
@@ -301,11 +283,11 @@
                                                     <td id="cvc-val"></td>
                                                 </tr>
                                                 <tr class="space-row">
-                                                    <th>Expiry Month:</th>
+                                                    <th>Tháng hết hạn:</th>
                                                     <td id="month-val"></td>
                                                 </tr>
                                                 <tr class="space-row">
-                                                    <th>Expiry Year:</th>
+                                                    <th>Năm hết hạn:</th>
                                                     <td id="year-val"></td>
                                                 </tr>
                                             </tbody>
@@ -349,39 +331,44 @@
         <div class="footer-top-section section bg-theme-two-light pt-80 pt-lg-60 pt-md-60 pt-sm-60 pt-xs-40 pb-40 pb-lg-20 pb-md-20 pb-sm-20 pb-xs-0">
             <div class="container">
                 <div class="row">
+
                     <div class="footer-widget col-lg-3 col-md-6 col-12 mb-40">
-                        <h4 class="title">CONTACT US</h4>
-                        <p>You address will be here<br /> Lorem Ipsum text</p>
-                        <p><a href="tel:01234567890">01234 567 890</a><a href="tel:01234567891">01234 567 891</a></p>
-                        <p><a href="mailto:info@example.com">info@example.com</a><a href="#">www.example.com</a></p>
+                        <h4 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h4>
+                        <p>Kí túc xá khu B ĐHQG<br/> Văn Phòng 714-F2</p>
+                        <p><a href="tel:0395 165 083">0395 165 083</a><a href="tel:01234567891">01234 567 891</a></p>
+                        <p><a href="#">Jadusona@gmail.com</a><a href="#">www.jadusona.com</a></p>
                     </div>
+
                     <div class="footer-widget col-lg-3 col-md-6 col-12 mb-40">
-                        <h4 class="title">PRODUCTS</h4>
+                        <h4 class="title">SẢN PHẨM</h4>
                         <ul>
-                            <li><a href="#">New Arrivals</a></li>
-                            <li><a href="#">Best Seller</a></li>
-                            <li><a href="#">Trendy Items</a></li>
-                            <li><a href="#">Best Deals</a></li>
-                            <li><a href="#">On Sale Products</a></li>
-                            <li><a href="#">Featured Products</a></li>
+                            <li><a href="#">Mới nhập</a></li>
+                            <li><a href="#">Bán chạy nhất</a></li>
+                            <li><a href="#">Thời trang xu hướng</a></li>
+                            <li><a href="#">Mua nhiều nhất</a></li>
+                            <li><a href="#">Đang khuyến mãi</a></li>
+                            <li><a href="#"></a></li>
                         </ul>
                     </div>
+
                     <div class="footer-widget col-lg-3 col-md-6 col-12 mb-40">
-                        <h4 class="title">INFORMATION</h4>
+                        <h4 class="title">THÔNG TIN</h4>
                         <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Payment Method</a></li>
-                            <li><a href="#">Product Warranty</a></li>
-                            <li><a href="#">Return Process</a></li>
-                            <li><a href="#">Payment Security</a></li>
+                            <li><a href="#">Cửa hàng</a></li>
+                            <li><a href="#">Điều khoản & Thõa thuận</a></li>
+                            <li><a href="#">Phương thức thanh toán</a></li>
+                            <li><a href="#">Bảo hành sản phẩm</a></li>
+                            <li><a href="#">Quy trình đổi trả</a></li>
+                            <li><a href="#">Bảo mật thanh toán</a></li>
                         </ul>
                     </div>
+
                     <div class="footer-widget col-lg-3 col-md-6 col-12 mb-40">
-                        <h4 class="title">NEWSLETTER</h4>
-                        <p>Subscribe our newsletter and get all update of our product</p>
+                        <h4 class="title">BẢN TIN</h4>
+                        <p>Đăng kí bản tin và nhận tất cả cập nhật về sản phẩm của chúng tôi</p>
+
                         <form id="mc-form" class="mc-form footer-subscribe-form" novalidate="true">
-                            <input id="mc-email" autocomplete="off" placeholder="Enter your email here" name="EMAIL" type="email">
+                            <input id="mc-email" autocomplete="off" placeholder="Nhập địa chỉ Email của bạn tại đây..." name="EMAIL" type="email">
                             <button id="mc-submit"><i class="fa fa-paper-plane-o"></i></button>
                         </form>
                         <!-- mailchimp-alerts Start -->
@@ -390,12 +377,16 @@
                             <div class="mailchimp-success"></div><!-- mailchimp-success end -->
                             <div class="mailchimp-error"></div><!-- mailchimp-error end -->
                         </div><!-- mailchimp-alerts end -->
-                        <h5>FOLLOW US</h5>
+
+                        <h5>Theo dõi chúng tôi</h5>
                         <p class="footer-social"><a href="#">Facebook</a> - <a href="#">Twitter</a> - <a href="#">Google+</a></p>
+
                     </div>
+
                 </div>
             </div>
         </div><!-- Footer Top Section End -->
+
         <!-- Footer Bottom Section Start -->
         <div class="footer-bottom-section section bg-theme-two pt-15 pb-15">
             <div class="container">
